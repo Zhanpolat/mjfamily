@@ -1,0 +1,80 @@
+.startFinish {
+    position: fixed !important;
+    z-index: 99999;
+    inset: 0;
+    backdrop-filter: blur(2px);
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: auto;
+    padding: 10px 0px;
+    background-image: none !important;
+    width: 100% !important;
+    height: 100%;
+    background-color: transparent !important;
+
+    &>div {
+        background-color: #fff;
+        border: none !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.4);
+        color: #333 !important;
+        padding: 20px 25px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 15px;
+
+        &>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &>span {
+                background-color: rgb(223, 189, 0);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                border-radius: 100px;
+            }
+
+            &:last-of-type {
+                justify-content: space-evenly;
+                width: 100%;
+                gap: 10px;
+            }
+
+            &>button {
+                padding: 10px 20px;
+                background-color: transparent;
+                border: 1px solid rgb(0, 0, 0, 0.4);
+                border-radius: 5px;
+                width: 40%;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:last-of-type {
+                    background-color: rgba(114, 0, 18, 1);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .startFinish>div>div {
+        &>span {
+            font-size: 18px;
+        }
+        &>button {
+            font-size: 18px;
+        }
+    }
+}
