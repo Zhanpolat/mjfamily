@@ -35,7 +35,7 @@ const OrderPage = () => {
     try {
       let payload = JSON.parse(data);
 
-      const response = await fetch("https://service.res.as-system.uz/v1/public/order", {
+      const response = await fetch("  https://service.dashboard.mjfamilybron.uz/v1/public/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -76,7 +76,7 @@ const OrderPage = () => {
   useEffect(() => {
     if (dataStart) {
       axios
-        .get(` https://service.dashboard.mjfamilybron.uz/v1/public/cabin-table/${title === 'Кабина' ? 'CABIN' : 'ALL'}`, {
+        .get(`https://service.dashboard.mjfamilybron.uz/v1/public/cabin-table/${title === 'Кабина' ? 'CABIN' : 'ALL'}`, {
           params: { startDate: dataStart },
           headers: {
             "Accept": "*/*",

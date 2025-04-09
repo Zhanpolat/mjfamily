@@ -57,7 +57,7 @@ const ModalOrders = ({
 
     useEffect(() => {
         const controller = new AbortController();
-        fetch("https://service.dashboard.mjfamilybron.uz/v1/public/menu/food", {
+        fetch("  https://service.dashboard.mjfamilybron.uz/v1/public/menu/food", {
             method: "GET",
             headers: {
                 "X-Page-Analytics": "315186e3-6347-4092-8e86-45e6e669fb82",

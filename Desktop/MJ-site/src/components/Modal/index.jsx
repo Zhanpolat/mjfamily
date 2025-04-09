@@ -56,7 +56,7 @@ const Modal = ({
 
     useEffect(() => {
         const controller = new AbortController();
-        fetch("https://service.res.as-system.uz/v1/public/menu/food", {
+        fetch("  https://service.dashboard.mjfamilybron.uz/v1/public/menu/food", {
             method: "GET",
             headers: {
                 "X-Page-Analytics": "315186e3-6347-4092-8e86-45e6e669fb82",
@@ -81,7 +81,7 @@ const Modal = ({
     }, []);
 
     useEffect(() => {
-        axios.get(`https://service.res.as-system.uz/v1/public/cabin-table/${title === 'Кабина' ? 'CABIN' : 'ALL'}`, {
+        axios.get(`  https://service.dashboard.mjfamilybron.uz/v1/public/cabin-table/${title === 'Кабина' ? 'CABIN' : 'ALL'}`, {
             headers: {
                 "Accept": "*/*",
                 "X-Page-Analytics": "315186e3-6347-4092-8e86-45e6e669fb82",

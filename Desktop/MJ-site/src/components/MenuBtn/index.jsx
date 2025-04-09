@@ -9,7 +9,7 @@ const MenuBtn = ({ setActive, active, titles }) => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await fetch('https://service.res.as-system.uz/v1/public/menu/category', {
+                const response = await fetch('  https://service.dashboard.mjfamilybron.uz/v1/public/menu/category', {
                     method: 'GET',
                     headers: {
                         "X-Page-Analytics": "315186e3-6347-4092-8e86-45e6e669fb82",
@@ -32,7 +32,7 @@ const MenuBtn = ({ setActive, active, titles }) => {
     }, []);
 
 
-
+  
     return (
         <div className={style.btn_wrap}>
             <button

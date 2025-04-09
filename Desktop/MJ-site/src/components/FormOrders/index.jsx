@@ -118,7 +118,7 @@ const FormOrders = ({
     const fetchData = async () => {
         try {
             const response = await axios.get(
-                `https://service.res.as-system.uz/v1/public/cabin-table/${title === "Кабина" ? "CABIN" : "ALL"
+                `https://service.dashboard.mjfamilybron.uz/v1/public/cabin-table/${title === "Кабина" ? "CABIN" : "ALL"
                 }`,
                 {
                     params: { startDate: formData.startDate },
